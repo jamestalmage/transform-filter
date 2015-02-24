@@ -1,6 +1,6 @@
 {
   "name": "transform-filter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Filter which files your browserify transforms will affect using glob patterns",
   "main": "index.js",
   "scripts": {
