@@ -26,6 +26,6 @@ function transformFilter (includPattern, excludePattern, transform){
 
   return function(file, opts){
     var pass = test(file);
-    return pass ? transform(file, opts) : through();
+    return pass ? transform.call(this,file, opts) : through();
   };
 }

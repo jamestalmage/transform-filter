@@ -106,5 +106,11 @@ describe('filter-transform', function(){
       .and.calledWith('/absolute/modB/test.js', optsObj);
   });
 
+  it('this stays bound on wrapped functions', function () {
+    var context = {};
+    runPaths(transformFilter(null,transform).bind(context), optsObj, 'modA/test.js');
+    expect(transform).to.have.been.calledOn(context);
+  });
+
 
 });
