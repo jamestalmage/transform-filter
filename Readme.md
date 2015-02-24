@@ -24,6 +24,7 @@ var filterCoffee = filterTransform(
 ```
 
   * The second argument is optional, so you can just do:
+
      `filterTransform('**/*.coffee', coffeeify)`.
   * Patterns can be a string, array of strings, null or undefined.
   * Exclude takes precedent over include.
