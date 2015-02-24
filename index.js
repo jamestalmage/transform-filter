@@ -6,14 +6,14 @@ var path = require('path') ;
 
 module.exports = transformFilter;
 
-function transformFilter (includPattern, excludePattern, transform){
+function transformFilter (includePattern, excludePattern, transform){
   if(typeof excludePattern === 'function'){
     transform = excludePattern;
     excludePattern = null;
   }
 
   function include(path){
-    return includPattern ? !!multimatch(path, includPattern).length : true;
+    return includePattern ? !!multimatch(path, includePattern).length : true;
   }
 
   function exclude(path){
