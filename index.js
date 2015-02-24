@@ -1,3 +1,4 @@
+'use strict';
 var multimatch = require('multimatch');
 var through = require('through');
 var path = require('path') ;

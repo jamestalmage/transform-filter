@@ -1,3 +1,4 @@
+'use strict';
 describe('filter-transform', function(){
 
   var sinon = require('sinon');
@@ -111,6 +112,4 @@ describe('filter-transform', function(){
     runPaths(transformFilter(null,transform).bind(context), optsObj, 'modA/test.js');
     expect(transform).to.have.been.calledOn(context);
   });
-
-
 });
