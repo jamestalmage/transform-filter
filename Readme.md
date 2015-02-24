@@ -29,9 +29,9 @@ var filterCoffee = filterTransform(
   * Exclude takes precedent over include.
 
 
-  If you need more control than glob patterns offer, check out [filter-transform](https://www.npmjs.com/package/filter-transform).
+If you need more control than glob patterns offer, check out [filter-transform](https://www.npmjs.com/package/filter-transform).
 
-  It offers similar filtering via a user supplied callback, and sparked the idea behind this module.
+It offers similar filtering via a user supplied callback, and sparked the idea behind this module.
 
 
 licence
