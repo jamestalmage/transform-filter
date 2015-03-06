@@ -11,7 +11,7 @@ describe('filter-transform', function(){
 
   var transformFilter;
 
-  var transform, through, path;
+  var transform, through, path, includeExclude;
 
   var optsObj = {};
 
@@ -24,10 +24,16 @@ describe('filter-transform', function(){
     path.resolve.withArgs('../absolute2').returns('/absolute2');
     optsObj = {};
 
-    transformFilter = proxyquire('..',{
-      'through' : through,
+
+    includeExclude = proxyquire('include-exclude',{
       'path' : path
     });
+
+    transformFilter = proxyquire('..', {
+      'include-exclude' : includeExclude,
+      'through' : through
+    })
+
   });
 
   function runPaths(filterInstance, opts, var_filenames){

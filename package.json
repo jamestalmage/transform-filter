@@ -35,7 +35,7 @@
     "sinon-chai": "^2.7.0"
   },
   "dependencies": {
-    "multimatch": "^2.0.0",
+    "include-exclude": "0.0.1",
     "through": "^2.3.6"
   }
 }
